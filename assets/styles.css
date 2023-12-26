@@ -119,7 +119,12 @@ h1 {
   font-weight: 700;
   color: var(--font-brown);
   padding: 10px 60px 10px 60px;
-  gap: 5px;
+}
+
+.about-info-container {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
 }
 
 .about-text {
@@ -131,13 +136,13 @@ h1 {
 
 .about-cards-container {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  width: 100%;
+  width: 80%;
   gap: 20px;
 }
 
-.about-cards-product {
+.about-cards-products {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,12 +157,12 @@ h1 {
   width: 35%;
 }
 
-.about-cards-product img {
+.about-cards-products img {
   width: 70%;
   padding: 20px 0;
 }
 
-.about-cards-product-text {
+.about-cards-products-text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -168,44 +173,7 @@ h1 {
   color: var(--font-brown);
 }
 
-.about-cards-product-text p {
-  text-align: center;
-  font-size: 15px;
-  color: var(--font-brown);
-}
-
-.about-cards-set {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: rgb(255, 255, 255);
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(137, 95, 71, 1) 85%
-  );
-  border-radius: 20px;
-  width: 35%;
-}
-
-.about-cards-set img {
-  width: 70%;
-  padding: 25px 0;
-}
-
-.about-cards-set-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 75%;
-  padding: 5px 10px 20px 10px;
-  gap: 10px;
-  color: var(--font-brown);
-}
-
-.about-cards-set-text p {
+.about-cards-products-text p {
   text-align: center;
   font-size: 15px;
   color: var(--font-brown);
@@ -349,4 +317,33 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contact {
+  color: var(--font-brown);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+.contact-info-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mail,
+.telefono,
+.entrega {
+  display: flex;
+  gap: 10px;
 }
