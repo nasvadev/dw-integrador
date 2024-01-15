@@ -110,6 +110,7 @@ h2 {
     rgba(137, 95, 71, 1) 85%
   );
   border-radius: 20px;
+  box-shadow: 0 5px 8px 2px var(--bg-silver);
   width: 30%;
   gap: 10px;
 }
