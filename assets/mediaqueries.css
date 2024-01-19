@@ -1,0 +1,87 @@
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--bg-dark-gray);
+    width: 50%;
+    padding: 20px;
+    border: 2px solid var(--bg-wenge);
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 20;
+  }
+
+  #menu-toggle:checked ~ .nav-list {
+    display: flex;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+    gap: 50px;
+  }
+
+  .about-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .primer-set,
+  .segundo-set {
+    max-width: 250px;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .contact {
+    gap: 50px;
+  }
+
+  .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .login-info {
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .register-info {
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

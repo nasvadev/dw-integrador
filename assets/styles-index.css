@@ -1,17 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap");
 
-/*
--Background gradient:
-background: rgb(203,202,200);
-background: linear-gradient(180deg, rgba(203,202,200,1) 28%, rgba(243,225,211,1) 71%);
--Brown-gradient:
-background: rgb(255,255,255);
-background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(137,95,71,1) 85%);
--Gray-gradient:
-background: rgb(255,255,255);
-background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(100,100,100,1) 85%);
-*/
-
 * {
   margin: 0;
   padding: 0;
@@ -66,10 +54,31 @@ header img {
   gap: 30px;
 }
 
+nav {
+  display: flex;
+}
+
+nav i {
+  font-size: 30px;
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  position: absolute;
+  right: 55px;
+  top: 18px;
+}
+
 .nav-link {
   color: var(--font-white);
   font-size: 14px;
   font-weight: 400;
+  z-index: 20;
 }
 
 main {
@@ -126,21 +135,21 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  /* width: 90%; */
 }
 
 .about-text {
   width: 70%;
   color: var(--font-brown);
   font-weight: 400;
-  text-align: justify;
+  text-align: center;
 }
 
 .about-cards-container {
   display: flex;
   justify-content: end;
   align-items: center;
-  width: 80%;
+  width: 100%;
   gap: 20px;
 }
 
@@ -157,7 +166,8 @@ h1 {
   );
   border-radius: 20px;
   box-shadow: 0 5px 8px 2px var(--bg-silver);
-  width: 35%;
+  max-width: 35%;
+  min-width: 200px;
 }
 
 .about-cards-products img {
@@ -211,6 +221,8 @@ h1 {
 .catalogo-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   gap: 50px;
 }
@@ -255,6 +267,7 @@ h1 {
 }
 
 .product img {
+  box-shadow: 0 2px 5px 2px var(--bg-silver);
   width: 80%;
 }
 
@@ -272,8 +285,9 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: var(--bg-dark-red);
-  height: 40px;
-  width: 40px;
+  box-shadow: 0 2px 5px 2px var(--bg-silver);
+  min-height: 40px;
+  min-width: 40px;
   border-radius: 50%;
 }
 
@@ -287,6 +301,7 @@ h1 {
   border: 2px solid var(--bg-brown);
   background-color: var(--bg-brown);
   border-radius: 20px;
+  box-shadow: 0 2px 5px 2px var(--bg-silver);
   padding: 2px 10px;
 }
 
@@ -324,7 +339,7 @@ h1 {
 
 .contact {
   color: var(--font-brown);
-  width: 70%;
+  width: 70vw;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -54,10 +54,31 @@ header img {
   gap: 30px;
 }
 
+nav {
+  display: flex;
+}
+
+nav i {
+  font-size: 30px;
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  position: absolute;
+  right: 55px;
+  top: 18px;
+}
+
 .nav-link {
   color: var(--font-white);
   font-size: 14px;
   font-weight: 400;
+  z-index: 20;
 }
 
 main {
@@ -66,7 +87,7 @@ main {
   align-items: center;
   justify-content: center;
   margin: 0 50px;
-  gap: 10px;
+  gap: 0;
 }
 
 .register {
@@ -146,14 +167,16 @@ form {
   font-weight: 700;
 }
 
-.register-btn {
-  margin: 30px 0 0 0;
+button {
+  margin: 30px 100px 0 100px;
   border: 2px solid var(--bg-dark-red);
   background-color: var(--bg-dark-red);
   border-radius: 20px;
+  box-shadow: 0 2px 5px 2px var(--bg-silver);
   color: var(--font-white);
   font-weight: 700;
   padding: 2px 10px;
+  width: fit-content;
 }
 
 footer {

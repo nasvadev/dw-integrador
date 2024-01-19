@@ -7,39 +7,40 @@
     <link rel="stylesheet" href="./assets/styles-register.css" />
     <link rel="stylesheet" href="/assets/animations.css" />
     <link rel="stylesheet" href="/assets/mediaqueries.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/assets/favicon/apple-touch-icon.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.ico" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/assets/favicon/favicon-32x32.png"
+      href="/assets/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/assets/favicon/favicon-16x16.png"
+      href="/assets/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
     <header>
       <img src="/assets/683de0ec15883fc2841ecdce2c77cf5d.png" alt="Utopía" />
       <nav>
+        <label for="menu-toggle" class="menu-toggle"
+          ><i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="nav-list">
           <ul class="nav-list">
             <li><a href="/index.html" class="nav-link">inicio</a></li>
-            <li><a href="#about" class="nav-link">acerca de</a></li>
-            <li><a href="#catalogo" class="nav-link">catálogo</a></li>
-            <li><a href="#contact" class="nav-link">contacto</a></li>
+            <li><a href="/index.html" class="nav-link">acerca de</a></li>
+            <li><a href="/index.html" class="nav-link">catálogo</a></li>
+            <li><a href="/index.html" class="nav-link">contacto</a></li>
             <li><a href="/login.html" class="nav-link">iniciar sesión</a></li>
             <li><a href="/register.html" class="nav-link">registrate</a></li>
           </ul>
         </ul>
+        <div class="overlay"></div>
       </nav>
     </header>
     <main>
@@ -53,22 +54,27 @@
       <section class="register-info">
         <form>
           <label for="name">Nombre*</label>
-          <input type="text" placeholder="María" id="name" />
+          <input type="text" placeholder="María" id="name" required />
           <br />
           <label for="surname">Apellido*</label>
-          <input type="text" placeholder="Vazquez" id="surname" />
+          <input type="text" placeholder="Vazquez" id="surname" required />
           <br />
           <label for="phone">Teléfono*</label>
-          <input type="number" placeholder="115-111-1111" id="phone" />
+          <input type="number" placeholder="115-111-1111" id="phone" required />
           <br />
           <label for="email">Correo electrónico*</label>
-          <input type="text" placeholder="maria@gmail.com" id="email" />
+          <input
+            type="text"
+            placeholder="maria@gmail.com"
+            id="email"
+            required
+          />
           <br />
           <label for="password">Contraseña*</label>
-          <input type="text" id="password" />
+          <input type="text" id="password" required />
+          <p>¿Necesitás ayuda? <a href="#">Escribinos</a></p>
+          <button type="submit">Enviar</button>
         </form>
-        <p>¿Necesitás ayuda? <a href="#">Escribinos</a></p>
-        <button type="submit" class="register-btn">registrate</button>
       </section>
     </main>
     <footer>

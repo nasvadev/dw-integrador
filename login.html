@@ -7,37 +7,38 @@
     <link rel="stylesheet" href="./assets/styles-login.css" />
     <link rel="stylesheet" href="/assets/animations.css" />
     <link rel="stylesheet" href="/assets/mediaqueries.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/assets/favicon/apple-touch-icon.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.ico" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/assets/favicon/favicon-32x32.png"
+      href="/assets/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/assets/favicon/favicon-16x16.png"
+      href="/assets/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
     <header>
       <img src="/assets/683de0ec15883fc2841ecdce2c77cf5d.png" alt="Utopía" />
       <nav>
+        <label for="menu-toggle" class="menu-toggle"
+          ><i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="nav-list">
           <li><a href="/index.html" class="nav-link">inicio</a></li>
-          <li><a href="#about" class="nav-link">acerca de</a></li>
-          <li><a href="#catalogo" class="nav-link">catálogo</a></li>
-          <li><a href="#contact" class="nav-link">contacto</a></li>
+          <li><a href="/index.html" class="nav-link">acerca de</a></li>
+          <li><a href="/index.html" class="nav-link">catálogo</a></li>
+          <li><a href="/index.html" class="nav-link">contacto</a></li>
           <li><a href="/login.html" class="nav-link">iniciar sesión</a></li>
           <li><a href="/register.html" class="nav-link">registrate</a></li>
         </ul>
+        <div class="overlay"></div>
       </nav>
     </header>
     <main>
@@ -51,13 +52,18 @@
       <section class="login-info">
         <form>
           <label for="email">Correo electrónico</label>
-          <input type="text" placeholder="maria@gmail.com" id="email" />
+          <input
+            type="text"
+            placeholder="maria@gmail.com"
+            id="email"
+            required
+          />
           <br />
           <label for="password">Contraseña</label>
-          <input type="text" id="password" />
+          <input type="text" id="password" required />
+          <p>¿Te olvidaste la contraseña? <a href="#">Escribinos</a></p>
+          <button type="submit">Enviar</button>
         </form>
-        <p>¿Te olvidaste la contraseña? <a href="#">Escribinos</a></p>
-        <button type="submit" class="login-btn">iniciar sesión</button>
       </section>
     </main>
     <footer>
