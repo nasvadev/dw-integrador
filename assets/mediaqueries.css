@@ -1,4 +1,144 @@
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+    gap: 50px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-cards-products {
+    min-width: 250px;
+  }
+
+  .about-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .products-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+  }
+
+  .primer-set,
+  .segundo-set {
+    display: flex;
+    justify-content: center;
+    min-width: 250px;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+
+  .contact {
+    gap: 50px;
+  }
+
+  .login-info {
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .register-info {
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .catalogo {
+    gap: 30px;
+  }
+
+  .contact {
+    gap: 30px;
+  }
+
+  .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 880px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+    gap: 30px;
+  }
+  .about-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .primer-set,
+  .segundo-set {
+    max-width: 250px;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .login-info {
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .register-info {
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 795px) {
   .menu-toggle {
     display: flex;
   }
@@ -23,65 +163,20 @@
   #menu-toggle:checked ~ .nav-list {
     display: flex;
   }
+}
 
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 50px;
-    gap: 50px;
+@media (max-width: 576px) {
+  .about-text {
+    width: 100%;
+    color: var(--font-brown);
+    font-weight: 400;
+    text-align: center;
   }
-
-  .about-info-container {
+  .about-cards-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-  }
-
-  .products-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 250px;
-    flex-wrap: wrap;
-    gap: 50px;
-  }
-
-  .primer-set,
-  .segundo-set {
-    max-width: 250px;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-
-  .contact {
-    gap: 50px;
-  }
-
-  .contact-info-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-  }
-
-  .login-info {
-    min-width: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .register-info {
-    min-width: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
