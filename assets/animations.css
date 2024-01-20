@@ -1,7 +1,6 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 60px;
-  /* Altura del header */
 }
 
 .overlay {
@@ -46,4 +45,121 @@ html {
 .nav-link:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+h1 {
+  animation: fade 1s ease-in, slide-up 1.5s ease-in-out;
+}
+
+.hero div p {
+  opacity: 0;
+  animation: fade 0.7s ease-in forwards, slide-up 1.5s ease-in-out;
+  animation-delay: 0.3s;
+}
+
+.about-text {
+  opacity: 0;
+  animation: fade 1s ease-in forwards, slide-right 1.5s ease-in-out;
+  animation-delay: 1s;
+}
+
+.hero h2 {
+  animation: fade 0.8s ease-in, slide-up 1s ease-in-out;
+}
+
+.catalogo h2 {
+  animation: fade 0.8s ease-in, slide-up 2s ease-in-out;
+}
+
+.contact h2 {
+  animation: fade 0.8s ease-in, slide-up 2s ease-in-out;
+}
+
+.product {
+  opacity: 0;
+  animation: fade 1.5s ease-in forwards, slide-up 3s ease-in-out;
+}
+
+iframe {
+  opacity: 0;
+  animation: fade 1.5s ease-in forwards, ease-in-out;
+  animation-delay: 0.8s;
+}
+
+@keyframes translate {
+  80% {
+    transform: translate(0);
+  }
+  0% {
+    transform: translate(10px, 50px);
+  }
+}
+
+.about-cards-products {
+  animation: translate 4s infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up-h2 {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.login h2,
+.register h2 {
+  animation: fade 1s ease-in, slide-up-h2 1.5s ease-in-out;
+}
+
+@keyframes slide-up-info {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.login-info,
+.register-info {
+  opacity: 0;
+  animation: fade 1.5s ease-in forwards, slide-up-info 3s ease-in-out;
 }

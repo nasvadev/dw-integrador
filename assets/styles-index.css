@@ -38,6 +38,7 @@ header {
   background-color: var(--bg-dark-gray);
   padding: 0 50px;
   position: fixed;
+  z-index: 20;
   height: 60px;
   width: 100%;
   display: flex;
@@ -88,6 +89,7 @@ main {
   justify-content: center;
   margin: 0 50px;
   gap: 80px;
+  z-index: 10;
 }
 
 .hero {
@@ -265,6 +267,7 @@ h1 {
   padding: 35px 0;
   gap: 20px;
   min-width: 250px;
+  /* z-index: 10; */
 }
 
 .product img {

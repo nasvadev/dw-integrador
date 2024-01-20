@@ -38,6 +38,7 @@ header {
   background-color: var(--bg-dark-gray);
   padding: 0 50px;
   position: fixed;
+  z-index: 20;
   height: 60px;
   width: 100%;
   display: flex;
@@ -80,6 +81,37 @@ nav i {
   font-weight: 400;
   z-index: 20;
 }
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+nav {
+  display: flex;
+}
+
+nav i {
+  font-size: 30px;
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  position: absolute;
+  right: 55px;
+  top: 18px;
+}
+
+.nav-link {
+  color: var(--font-white);
+  font-size: 14px;
+  font-weight: 400;
+  z-index: 20;
+}
 
 main {
   display: flex;
@@ -88,6 +120,7 @@ main {
   justify-content: center;
   margin: 0 50px;
   gap: 10px;
+  z-index: 10;
 }
 
 .register {
