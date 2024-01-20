@@ -87,7 +87,20 @@ h1 {
 .about-text {
   opacity: 0;
   animation: fade 1s ease-in forwards, slide-right 1.5s ease-in-out;
-  animation-delay: 1s;
+  animation-delay: 0.8s;
+}
+
+@keyframes translate {
+  80% {
+    transform: translate(0);
+  }
+  0% {
+    transform: translate(10px, 50px);
+  }
+}
+
+.about-cards-products {
+  animation: translate 2s;
 }
 
 .hero h2 {
@@ -111,19 +124,6 @@ iframe {
   opacity: 0;
   animation: fade 1.5s ease-in forwards, ease-in-out;
   animation-delay: 0.8s;
-}
-
-@keyframes translate {
-  80% {
-    transform: translate(0);
-  }
-  0% {
-    transform: translate(10px, 50px);
-  }
-}
-
-.about-cards-products {
-  animation: translate 4s;
 }
 
 @keyframes fade {
