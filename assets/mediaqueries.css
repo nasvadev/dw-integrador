@@ -1,4 +1,11 @@
 @media (max-width: 1200px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   main {
     display: flex;
     flex-direction: column;
@@ -97,6 +104,7 @@
     margin: 0 50px;
     gap: 30px;
   }
+
   .about-info-container {
     display: flex;
     flex-direction: column;
@@ -163,9 +171,33 @@
   #menu-toggle:checked ~ .nav-list {
     display: flex;
   }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .redes,
+  .extra-info {
+    min-width: 10%;
+  }
+
+  .logo-footer img {
+    min-width: 40px;
+  }
 }
 
 @media (max-width: 576px) {
+  .hero img {
+    max-width: 90%;
+  }
+
+  .hero div {
+    text-align: center;
+    padding: 0 20px;
+  }
+
   .about-text {
     width: 100%;
     color: var(--font-brown);
@@ -178,5 +210,12 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .map {
+    min-width: 100%;
+    padding: 0 20px;
   }
 }

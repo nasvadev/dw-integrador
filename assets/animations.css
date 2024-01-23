@@ -123,7 +123,6 @@ h1 {
 iframe {
   opacity: 0;
   animation: fade 1.5s ease-in forwards, ease-in-out;
-  animation-delay: 0.8s;
 }
 
 @keyframes fade {
