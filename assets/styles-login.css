@@ -123,6 +123,17 @@ main {
   z-index: 10;
 }
 
+.utopia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.utopia img {
+  max-width: 90%;
+  margin-top: 50px;
+}
+
 .login {
   display: flex;
   flex-direction: column;
@@ -152,7 +163,7 @@ h2 {
   color: var(--font-brown);
 }
 
-.login-info {
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,8 +177,6 @@ h2 {
   );
   border-radius: 20px;
   box-shadow: 0 5px 8px 2px var(--bg-silver);
-  width: 30%;
-  gap: 15px;
 }
 
 form {
@@ -187,7 +196,7 @@ form {
   border-color: var(--bg-champagne-pink);
   height: 30px;
   width: 250px;
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
 }
 
 .login-info p {

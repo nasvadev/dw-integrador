@@ -1,11 +1,4 @@
 @media (max-width: 1200px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   main {
     display: flex;
     flex-direction: column;
@@ -96,15 +89,6 @@
 }
 
 @media (max-width: 880px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 50px;
-    gap: 30px;
-  }
-
   .about-info-container {
     display: flex;
     flex-direction: column;
@@ -189,10 +173,6 @@
 }
 
 @media (max-width: 576px) {
-  .hero img {
-    max-width: 90%;
-  }
-
   .hero div {
     text-align: center;
     padding: 0 20px;
@@ -210,6 +190,36 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .login p,
+  .register p {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-container {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  .login h2 {
+    font-size: 30px;
+  }
+
+  .login p,
+  .register p {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 334px) {
+  .login h2 {
+    font-size: 25px;
   }
 }
 
